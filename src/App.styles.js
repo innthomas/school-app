@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import eduImg from "./assets/edu.svg";
+import peopleImg from "./assets/people.svg";
 
 const AppContainer = styled.div`
 @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
@@ -7,7 +7,7 @@ const AppContainer = styled.div`
     max-width: 100%;
     height: 100vh;
     font-family: 'Oxygen', sans-serif;
-    background-image: url(${eduImg});
+    background-image: url(${peopleImg});
     background-repeat: no-repeat;
     background-position:80% 70%;
     background-size: 40%;

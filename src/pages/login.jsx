@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link } from "react-router-dom";
 import loginImg from '../assets/loginImg.svg'
 import KodeLogo from '../assets/kode.png'
 import LoginContainer from './login.styles'
@@ -7,7 +8,7 @@ const login = () => {
   return (
     <LoginContainer>
         <div className="login__left">
-            <h2>Students Login</h2>
+            <h2>Student's Login</h2>
             <p>Make sure your account is secure.</p>
             <img className='loginImg' src={loginImg} alt="login-img" />
         </div>
@@ -23,7 +24,9 @@ const login = () => {
                 <div className="form-group">
                   <input type="password" className="form-control" id="exampleInputPassword1" placeholder="Password" />
                   </div> 
-                  <button type="submit" className="btn btn-primary">Login</button>
+                  <button type="submit" className="btn btn-primary">
+                  <Link to="/dashboard">login</Link>
+                  </button>
                   
           </form>
 
