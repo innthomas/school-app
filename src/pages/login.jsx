@@ -24,7 +24,7 @@ const login = () => {
                 <div className="form-group">
                   <input type="password" className="form-control" id="exampleInputPassword1" placeholder="Password" />
                   </div> 
-                  <button type="submit" className="btn btn-primary">
+                  <button type="submit" className="btn">
                   <Link to="/dashboard">login</Link>
                   </button>
                   

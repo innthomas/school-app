@@ -10,15 +10,18 @@ const profile = () => {
       </div>
       <div className="profile__content">
         <div className="profile__content__detailLeft">
-          <h3>Name:</h3>
-          <p>John Doe</p>
-          <h3>Email:</h3>
+          <h3>Name: John Doe</h3>
+          <p>Email: john@gmail.com</p>
           
 
           </div>
           <div className="profile__content__detailRight">
-          <h3>Name:</h3>
-          <p>John Doe</p>
+          <h3>Class: SS 2</h3>
+          <h4>Subjects offered:</h4>
+          <ol>
+            <li>Mathematics</li>
+            <li>Chemistry</li>
+          </ol>
 
           </div>
       </div>
