@@ -7,6 +7,7 @@ import Login from './pages/login';
 import Dashboard from './pages/dashboard';
 import DashboardContent from './pages/dashboard/dashboardContent';
 import Courses from './pages/dashboard/courses';
+import CourseDetail from './pages/dashboard/courses/courseDetail';
 import Profile from './pages/dashboard/profile';
 import Logout from './pages/logout';
 
@@ -25,6 +26,7 @@ root.render(
       element={
         <main style={{ padding: "1rem" }}>
           <p>There's nothing here!</p>
+          <button>go back to home</button>
         </main>
       }
     />
@@ -32,7 +34,12 @@ root.render(
       <Route path="/logout" element={<Logout/>} />
       <Route path="/dashboard" element={<Dashboard/>}>
        <Route index element={<DashboardContent/>}/>
-        <Route path="/dashboard/courses" element={<Courses/>} />
+        <Route path="dashboard/courses" element={<Courses/>} >
+          <Route path=":courseId" element={<CourseDetail/>} />
+          
+        </Route>
+          
+        
         <Route path="/dashboard/profile" element={<Profile/>} />
       </Route>
       

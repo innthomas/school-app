@@ -1,13 +1,14 @@
 import styled from "styled-components"
 
 const CourseStyles = styled.div`
+margin : 2rem auto;
 max-width: 100%;
 max-height: 100vh;
 display: grid;
 grid-template-columns: repeat(3,1fr);
 grid-template-rows: repeat(2,1fr);
-grid-row-gap: 3rem;
-grid-column-gap: 2rem;
+gap:3rem;
+
 
      & .course__item{
             max-width: 100%;
@@ -25,8 +26,13 @@ grid-column-gap: 2rem;
             font-family: 'Oxygen', sans-serif;
             opacity: 60%;
             cursor: pointer;
-            margin: 1rem;
+            /* margin: 1rem; */
             padding: 1rem;
+
+            & a{
+                    text-decoration: none;
+                    color: #fff;
+            }
 
      }
 

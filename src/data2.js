@@ -77,12 +77,8 @@ const courses = [
       }
     }
    ]
-    // export default course;
-
-  export function getCourses(){
-    return courses;
-  }
   
-  // export function getCourses(id){
-  //   return courses.find(course => course.id === id);
-  // }
+  
+  export function getCourses(id){
+    return courses.find(course => course.id === id);
+  }

@@ -11,7 +11,7 @@ const dashboard = () => {
                 
             </div>
             <div className="dashboard__list__item">
-            <Link to="/dashboard/courses">Courses</Link>
+            <Link to="dashboard/courses">Courses</Link>
 
                 
             </div>

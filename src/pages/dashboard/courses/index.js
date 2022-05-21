@@ -1,37 +1,21 @@
-import React from 'react';
-import {FaGraduationCap} from 'react-icons/fa';
-import CourseStyles from './courses.styles';
-//import {course} from '../../data.js';
+import { Link, Outlet } from "react-router-dom";
+import {getCourses} from '../../../data';
 
-const courses = () => {
+export default function Courses() {
+  const courses = getCourses();
+  console.log(courses);
   return (
-    <CourseStyles>
-      <div className="course__item">
-        
-
-        <FaGraduationCap />
-        
-        <h2>chemistry</h2>
-      </div>
-      <div className="course__item">
-      <FaGraduationCap />
-      <h2>Physics</h2>
-      </div>
-      <div className="course__item">
-      <FaGraduationCap />
-        <h2>Mathematics</h2>
-        </div>
-      <div className="course__item">
-      <FaGraduationCap />
-        <h2>Biology</h2>
-        </div>
-      <div className="course__item">
-      <FaGraduationCap />
-        <h2>English Language</h2>
-        </div>
-      
-    </CourseStyles>
-  )
+    <div className="courses">
+      <h1>courses</h1>
+      <ul>
+        {courses.map(course => (
+          <li key={course.id}>
+            <Link to={`${course.id}`}>{course.name}</Link>
+          </li>
+        ))}
+      </ul>
+      <Outlet />
+    </div>
+  );
 }
 
-export default courses
