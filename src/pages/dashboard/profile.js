@@ -21,6 +21,8 @@ const profile = () => {
           <ol>
             <li>Mathematics</li>
             <li>Chemistry</li>
+            <li>English Language</li>
+            <li>Biology</li>
           </ol>
 
           </div>
