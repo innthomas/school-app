@@ -1,6 +1,7 @@
 import styled from "styled-components"
 
 const CourseStyles = styled.div`
+font-family: 'Oxygen', sans-serif;
 margin : 2rem auto;
 max-width: 100%;
 max-height: 100vh;

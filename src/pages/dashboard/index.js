@@ -7,20 +7,20 @@ const dashboard = () => {
     <DashboardStyle>
         <div className="dashboard__list">
             <div className="dashboard__list__item">
-                <Link to="/dashboard">Dashboard</Link>
+                <Link to="/school-app/dashboard">Dashboard</Link>
                 
             </div>
             <div className="dashboard__list__item">
-            <Link to="dashboard/courses">Courses</Link>
+            <Link to="/school-app/dashboard/courses">Courses</Link>
 
                 
             </div>
             <div className="dashboard__list__item">
-            <Link to="/dashboard/profile">Profile Page</Link>
+            <Link to="/school-app/dashboard/profile">Profile Page</Link>
                 
             </div>
             <div className="dashboard__list__item">
-            <Link to="/logout">Logout</Link>
+            <Link to="/school-app/logout">Logout</Link>
                 
             </div>
         </div>

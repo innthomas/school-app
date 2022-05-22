@@ -2,7 +2,7 @@ import styled from "styled-components";
 import peopleImg from "./assets/people.svg";
 
 const AppContainer = styled.div`
-@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+
 
     max-width: 100%;
     height: 100vh;

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const LoginContainer = styled.div`
-
+    font-family: 'Oxygen', sans-serif;
     max-width: 100%;
     height: 100vh; 
     display: flex;
@@ -108,8 +108,26 @@ const LoginContainer = styled.div`
         }
 
 
+        
+
+
 
     }
+
+    @media (max-width: 768px){
+            flex-direction: column;
+
+            & .login__left {
+                margin-bottom: 4rem;
+
+                img{
+                    display: none;
+                }
+                
+
+            }
+
+        }
 
 
 `;

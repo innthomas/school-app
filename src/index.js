@@ -20,7 +20,7 @@ root.render(
     <GlobalStyle/>
     <BrowserRouter>
     <Routes>
-      <Route path="/" element={<App/>} />
+      <Route path="/school-app/" element={<App/>} />
       <Route
       path="*"
       element={
@@ -30,17 +30,17 @@ root.render(
         </main>
       }
     />
-      <Route path="/login" element={<Login/>} />
-      <Route path="/logout" element={<Logout/>} />
-      <Route path="/dashboard" element={<Dashboard/>}>
+      <Route path="/school-app/login" element={<Login/>} />
+      <Route path="/school-app/logout" element={<Logout/>} />
+      <Route path="/school-app/dashboard" element={<Dashboard/>}>
        <Route index element={<DashboardContent/>}/>
-        <Route path="dashboard/courses" element={<Courses/>} >
+        <Route path="/school-app/dashboard/courses" element={<Courses/>} >
           <Route path=":courseId" element={<CourseDetail/>} />
           
         </Route>
           
         
-        <Route path="/dashboard/profile" element={<Profile/>} />
+        <Route path="/school-app/dashboard/profile" element={<Profile/>} />
       </Route>
       
     </Routes>

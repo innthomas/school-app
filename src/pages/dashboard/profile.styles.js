@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 const ProfileContainer = styled.div`
+font-family: 'Oxygen', sans-serif;
     max-width: 100%;
     height: 100vh;
 
@@ -18,6 +19,10 @@ const ProfileContainer = styled.div`
         align-items: start;
         margin-top: 2rem;
         padding:1rem;
+        @media (max-width: 768px){
+            flex-direction: column;
+
+        }
 
         & .profile__content__detailLeft{
             margin-top: 0;

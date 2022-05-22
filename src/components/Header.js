@@ -10,7 +10,7 @@ const Header = () => {
         <img className='header__logo' src={logo} alt="logo" />
       </div>
       <div className="buttonDiv">
-      <Link to="/login">login</Link>
+      <Link to="/school-app/login">login</Link>
 
       </div>
 

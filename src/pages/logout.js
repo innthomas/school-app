@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from "react-router-dom";
 import byeImg from '../assets/bye.svg'
 import LogoutContainer from './logout.styles';
 
@@ -11,7 +12,9 @@ const logout = () => {
       <div className="logout__content">
         <h1>See you soon!</h1>
         <p>You have been logged out successfully.</p>
-        <button>login again</button>
+        <button>
+        <Link to="/school-app/login">login again</Link>
+        </button>
       </div>
 
     </LogoutContainer>

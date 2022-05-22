@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 const DashboardStyle = styled.div`
+font-family: 'Oxygen', sans-serif;
 width: 100%;
 height: 100vh;
 display: flex;

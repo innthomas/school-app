@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 const HeaderStyles = styled.header`
+font-family: 'Oxygen', sans-serif;
 width: 100%;
 height: 10vh;
 border: 1px solid gray;

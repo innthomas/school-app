@@ -6,12 +6,12 @@ const profile = () => {
     <ProfileContainer>
       <h2>Profile Setting</h2>
       <div className="imageDiv">
-        <img src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="profile" />
+        <img src={localStorage.getItem("photoURL")} alt={localStorage.getItem("displayName")} />
       </div>
       <div className="profile__content">
         <div className="profile__content__detailLeft">
-          <h3>Name: John Doe</h3>
-          <p>Email: john@gmail.com</p>
+          <h3>Name: {localStorage.getItem("displayName")}</h3>
+          <p>Email:  {localStorage.getItem("displayEmail")}</p>
           
 
           </div>
@@ -23,6 +23,7 @@ const profile = () => {
             <li>Chemistry</li>
             <li>English Language</li>
             <li>Biology</li>
+            <li>Physics</li>
           </ol>
 
           </div>
