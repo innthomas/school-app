@@ -73,6 +73,7 @@ const LoginContainer = styled.div`
 
             & button{
                 width: 100%;
+
                 height: 3rem;
                 border: 1px solid #ccc;
                 border-radius: 15px;
@@ -93,6 +94,35 @@ const LoginContainer = styled.div`
                     color: white;
                 }
 
+            }
+            & .buttonDiv{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                margin-top: 2rem;
+               
+                margin-bottom: 2rem;
+                & p{
+                    font-family: 'Oxygen', sans-serif;
+                    font-size: 1.5rem;
+                    color: brown;
+                    opacity: 50%;
+                }
+                & a{
+                    text-decoration: none;
+                    color: #276FBF;
+                    font-size: 1.5rem;
+                    opacity: 60%;
+
+                    & span{
+                        color: green;
+                        font-size: 2.0rem;
+                        font-weight: bold;
+                        opacity: 80%;
+                        text-decoration: underline;
+                    }
+                }
             }
 
             & button:hover{

@@ -11,11 +11,19 @@ const Login = () => {
   const [loginEmail,setLoginEmail] = useState("")
   const [loginPassword,setLoginPassword] = useState("")
   const [showBtn,setShowBtn] = useState(false);
+  const [showGoogleBtn,setShowGoogleBtn] = useState(true);
+
+  const handleClick = () => {
+    signInWithGoogle();
+    setShowBtn(true);
+    setShowGoogleBtn(false);
+  }
+
 
   // useEffect(() => {
   //   setTimeout(() => {
   //     setShowBtn(true);
-  //   }, 1000);
+  //   }, 2000);
   // }, []);
 
 
@@ -69,13 +77,20 @@ const Login = () => {
                   <button type="submit" className="btn" onClick={login}>
                   <Link to="/dashboard">login</Link>
                   </button>  */}
-                  <button type="submit" className="btn" onClick={signInWithGoogle}>
-                  sign in with google
+                  {/* <button type="submit" className="btn" onClick={signInWithGoogle}> */}
+                 {showGoogleBtn && <button type="submit" className="btn" onClick={handleClick}>
+                  signin with google
                   </button>
+     }
 
-                  {localStorage.getItem("displayName") && <button>
-                    <Link to="/school-app/dashboard">go to dashboard</Link>
-                    </button>}
+                  {showBtn && <div className='buttonDiv'>
+                    <p>
+
+                    {auth.currentUser.displayName} <br/>
+                    </p>
+                    <Link to="/school-app/dashboard">
+                       go to <span>dashboard</span></Link>
+                    </div>}
                   
                  </div> 
 

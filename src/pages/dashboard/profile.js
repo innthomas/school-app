@@ -1,4 +1,5 @@
 import React from 'react'
+import {auth} from '../../fiebase-config'
 import ProfileContainer from './profile.styles';
 
 const profile = () => {
@@ -6,12 +7,12 @@ const profile = () => {
     <ProfileContainer>
       <h2>Profile Setting</h2>
       <div className="imageDiv">
-        <img src={localStorage.getItem("photoURL")} alt={localStorage.getItem("displayName")} />
+        <img src={auth.currentUser.photoURL} alt={auth.currentUser.displayName} />
       </div>
       <div className="profile__content">
         <div className="profile__content__detailLeft">
-          <h3>Name: {localStorage.getItem("displayName")}</h3>
-          <p>Email:  {localStorage.getItem("displayEmail")}</p>
+          <h3>Name: {auth.currentUser.displayName}</h3>
+          <p>Email:  {auth.currentUser.email}</p>
           
 
           </div>
