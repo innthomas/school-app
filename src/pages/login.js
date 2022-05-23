@@ -78,15 +78,14 @@ const Login = () => {
                   <Link to="/dashboard">login</Link>
                   </button>  */}
                   {/* <button type="submit" className="btn" onClick={signInWithGoogle}> */}
-                 {showGoogleBtn && <button type="submit" className="btn" onClick={handleClick}>
+                  {showGoogleBtn && <button type="submit" className="btn" onClick={handleClick}>
                   signin with google
-                  </button>
-     }
+                  </button> }
 
                   {showBtn && <div className='buttonDiv'>
                     <p>
 
-                    {auth.currentUser.displayName} <br/>
+                    {auth.currentUser.name} <br/>
                     </p>
                     <Link to="/school-app/dashboard">
                        go to <span>dashboard</span></Link>
