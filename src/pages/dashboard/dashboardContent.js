@@ -10,7 +10,7 @@ const DashboardContent = () => {
     <DashboardContentStyle>
        <div className='dashboard__text'>
         <h3>Welcome </h3>
-        <h1>{auth.currentUser.name}</h1>
+        <h1>{auth.currentUser.displayName}</h1>
         <p>explore your world!</p>
         
        </div>
