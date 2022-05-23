@@ -85,7 +85,7 @@ const Login = () => {
                   {showBtn && <div className='buttonDiv'>
                     <p>
 
-                    {auth.currentUser.name} <br/>
+                    {/* {auth.currentUser.name} <br/> */}
                     </p>
                     <Link to="/school-app/dashboard">
                        go to <span>dashboard</span></Link>
